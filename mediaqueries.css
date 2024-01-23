@@ -9,11 +9,30 @@
 }
 
 @media screen and (max-width: 1200px) {
-    #desktop-nav {
-        display: none;
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: #181818;
+        transition: all 0.3s ease-in-out;
     }
-    #hamburger-nav {
-        display: flex;
+    .menu li {
+      margin-top: 40px;
+    }
+    .menu li a {
+      padding: 10px;
+    }
+    .open-menu , .close-menu {
+      display: block;
+    }
+    #check:checked ~ .menu {
+      right: 0;
     }
     #experience,
     .experience-details-container {

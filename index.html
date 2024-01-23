@@ -6,9 +6,10 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
 </head>
 <body>
-    <nav id="desktop-nav">
+    <!-- <nav id="desktop-nav">
         <div class="logo">Varick Tov</div>
         <div>
           <ul class="nav-links">
@@ -34,7 +35,23 @@
             <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
           </div>
         </div>
-      </nav>
+      </nav> -->
+      <nav class="upper-nav">
+        <div class="logo">Varick Tov</div>
+        <div>
+          <ul class="navbar">
+            <input type='checkbox' id='check' />
+            <span class="menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <label for="check" class="close-menu"><i class="fas fa-times fa-2x"></i></label>
+            </span>
+            <label for="check" class="open-menu"><i class="fa-solid fa-lg fa-bars"></i></label>
+        </ul>
+        </div>
+    </nav>
       <section id="profile">
         <div class="section__pic-container">
           <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
@@ -350,14 +367,14 @@
         </div>
       </section>
       <footer>
-        <nav>
+        <nav class="footer-nav">
             <div class="nav-links-container">
                 <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                  </ul>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#experience">Experience</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
         </nav>
         <p>Copyright &#169; 2024 Varick. All Rights Reserved.</p>
